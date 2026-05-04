@@ -1,0 +1,93 @@
+# ────── Python ──────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ────── Environments ──────
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# ────── Jupyter ──────
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ────── OS / IDE ──────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ────── Claude / agent scratch ──────
+.claude/
+0_README/CVPR_CH4CHL_NEXT_ACTIONS.md
+
+# ────── Legacy workspace dirs (kept locally, not part of the release) ──────
+0_README/
+1_data/
+2_notebooks/
+3_src/
+4_models/
+5_outputs/
+6_papers/
+截圖*.png
+[CVPR*.pdf
+
+# ────── Data (regenerated or downloaded; not committed) ──────
+data/
+*.pkl
+*.tar.bz2
+*.zip
+video-gait-v1/
+dataset/
+
+# ────── Models (regenerated; not committed) ──────
+models/
+*.pt
+*.pth
+*.ckpt
+*.joblib
+
+# ────── Submissions (bulk) ──────
+submissions/scratch/
+submissions/_TODO_next/
+submissions/_reproduced/
+submissions/anchors/
+submissions/milestones/
+submissions/ml_sources/
+# Keep these:
+!submissions/final/*.csv
+!submissions/intermediate/*.csv
+!submissions/item_sources/*.csv
+!submissions/reference/*.csv
+
+# ────── Logs / outputs ──────
+*.log
+wandb/
+mlruns/
+lightning_logs/
+tb_logs/
+runs/
+catboost_info/
+
+# ────── Large binaries ──────
+*.mp4
+*.avi
+*.mov

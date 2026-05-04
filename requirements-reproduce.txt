@@ -1,0 +1,3 @@
+# Minimal environment for submitted-artifact hash checks.
+# Full retraining uses requirements.txt.
+pandas==2.2.2

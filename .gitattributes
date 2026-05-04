@@ -1,0 +1,23 @@
+# LFS tracking rules (if future large files need to be committed directly).
+# At present the repo does not require LFS — all large assets live on Google Drive.
+#
+# Uncomment + install git-lfs before re-enabling:
+# *.pkl   filter=lfs diff=lfs merge=lfs -text
+# *.pt    filter=lfs diff=lfs merge=lfs -text
+# *.pdf   filter=lfs diff=lfs merge=lfs -text
+
+# Enforce LF line endings for text assets
+*.py       text eol=lf
+*.sh       text eol=lf
+*.md       text eol=lf
+*.yaml     text eol=lf
+*.yml      text eol=lf
+*.csv      text eol=lf
+*.cff      text eol=lf
+*.txt      text eol=lf
+*.json     text eol=lf
+*.ipynb    text eol=lf
+
+# Preserve submitted CSV artifacts exactly. The final submission hash is
+# defined over CRLF bytes written by src/cv4chl/final_assembly.py.
+submissions/final/*.csv -text
